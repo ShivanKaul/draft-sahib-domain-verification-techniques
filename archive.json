@@ -1,0 +1,395 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2021-04-18T00:05:18.043708+00:00",
+  "repo": "ShivanKaul/draft-sahib-domain-verification-techniques",
+  "labels": [
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "future work",
+      "description": "Work on later",
+      "color": "a2eeef"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    },
+    {
+      "name": "draft-01",
+      "description": "Work on for draft 01",
+      "color": "1128AF"
+    }
+  ],
+  "issues": [
+    {
+      "number": 4,
+      "id": "MDU6SXNzdWU4NDAxNTAwODQ=",
+      "title": "Patterns in the examples we provide",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/4",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "draft-01"
+      ],
+      "body": "Patterns? Categories?",
+      "createdAt": "2021-03-24T20:44:25Z",
+      "updatedAt": "2021-04-08T01:49:55Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 5,
+      "id": "MDU6SXNzdWU4NDAxNTEwODA=",
+      "title": "ACME example",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/5",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "01"
+      ],
+      "body": "pattern - _servicename-challenge would be best practice. Get over colliding problems at the apex as mentioned in #7 \r\nwhat is the <servicename>? Do we need IANA registry? #8 Worth discussing in the doc\r\n",
+      "createdAt": "2021-03-24T20:45:52Z",
+      "updatedAt": "2021-04-07T20:16:26Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 6,
+      "id": "MDU6SXNzdWU4NDAxNTE4MTk=",
+      "title": "New DNS record type?",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/6",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "future work"
+      ],
+      "body": "suggestions for alternatives, in conclusion\r\n- cohabiting multiple services - _ scheme",
+      "createdAt": "2021-03-24T20:46:55Z",
+      "updatedAt": "2021-04-08T01:41:12Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "ShivanKaul",
+          "authorAssociation": "OWNER",
+          "body": "Design choices when expanding DNS https://tools.ietf.org/html/rfc5507",
+          "createdAt": "2021-03-24T20:47:59Z",
+          "updatedAt": "2021-03-24T20:47:59Z"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "id": "MDU6SXNzdWU4NDAxNTYzNjQ=",
+      "title": "Motivation for having targeted domain verification",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/7",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "draft-01"
+      ],
+      "body": "More work for the application verifying\r\nbloating size of DNS response - truncation, retry over tcp",
+      "createdAt": "2021-03-24T20:54:10Z",
+      "updatedAt": "2021-04-08T01:41:29Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "ShivanKaul",
+          "authorAssociation": "OWNER",
+          "body": "The problem is bloating apex with TXT records causes these issues ^",
+          "createdAt": "2021-04-07T20:10:23Z",
+          "updatedAt": "2021-04-07T20:10:23Z"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "id": "MDU6SXNzdWU4NDAxNTc4MDE=",
+      "title": "IANA registry for underscore prefixes",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/8",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "future work"
+      ],
+      "body": "the potential number of entries could be unmanageably large",
+      "createdAt": "2021-03-24T20:56:24Z",
+      "updatedAt": "2021-04-08T01:41:03Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 9,
+      "id": "MDU6SXNzdWU4NDAxNjIxMTY=",
+      "title": "Public suffix boundary for domain verification?",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/9",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "future work"
+      ],
+      "body": "",
+      "createdAt": "2021-03-24T21:02:54Z",
+      "updatedAt": "2021-04-08T23:05:25Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "ShivanKaul",
+          "authorAssociation": "OWNER",
+          "body": "Don't verify anything above the public suffix!",
+          "createdAt": "2021-04-07T20:08:48Z",
+          "updatedAt": "2021-04-07T20:08:48Z"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "MDU6SXNzdWU4NTI3NzMxMjY=",
+      "title": "HTTPS SVC CNAME",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/10",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "enhancement"
+      ],
+      "body": "- The issue is that CNAME can't exist with any other record including TXT\r\n- But if everyone moves to HTTPS SVC, then that problem is alleviated",
+      "createdAt": "2021-04-07T20:11:48Z",
+      "updatedAt": "2021-04-07T20:11:56Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 11,
+      "id": "MDU6SXNzdWU4NTI3NzQ1MTE=",
+      "title": "DNSSEC ",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/11",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "enhancement"
+      ],
+      "body": "Guidance\r\n- domain verification can be spoofed if not using DNSSEC\r\n\r\nMove from Security Considerations section -> recommendations",
+      "createdAt": "2021-04-07T20:13:41Z",
+      "updatedAt": "2021-04-07T20:14:08Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 12,
+      "id": "MDU6SXNzdWU4NTI3Nzk5NTc=",
+      "title": "Privacy considerations",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/12",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "future work"
+      ],
+      "body": "- what services a domain is using?\r\n- unavoidable because we're using DNS\r\n- RRR? registries (maybe)\r\n- maybe we could use cryptographic techniques to not leak this? at odds with a well known registry (for next document)",
+      "createdAt": "2021-04-07T20:20:50Z",
+      "updatedAt": "2021-04-08T01:40:40Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 13,
+      "id": "MDU6SXNzdWU4NTI3ODE0MzA=",
+      "title": "Catalogue of examples",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/13",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "future work"
+      ],
+      "body": "- we could have a simple doc maintained in the repo\r\n- a growing list",
+      "createdAt": "2021-04-07T20:22:49Z",
+      "updatedAt": "2021-04-08T01:40:40Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 14,
+      "id": "MDU6SXNzdWU4NTM5OTY2NjU=",
+      "title": "Recommendation: domain verification records should not be required to persist in perpetuity ",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/14",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "draft-01"
+      ],
+      "body": "",
+      "createdAt": "2021-04-08T22:45:15Z",
+      "updatedAt": "2021-04-08T23:05:36Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 15,
+      "id": "MDU6SXNzdWU4NTQwMDE5ODg=",
+      "title": "Terminology",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/15",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "- service\r\n- provider",
+      "createdAt": "2021-04-08T22:57:42Z",
+      "updatedAt": "2021-04-08T22:57:42Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 16,
+      "id": "MDU6SXNzdWU4NTkyNTk1NTU=",
+      "title": "Domain verification for subtree under or just the domain",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/16",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "future work"
+      ],
+      "body": "Scope of verification:\r\nLet's Encrypt - is only for the domain\r\nGoogle - everything under that domain?\r\n\r\nCall this out explicitly in the draft.",
+      "createdAt": "2021-04-15T21:23:18Z",
+      "updatedAt": "2021-04-15T21:23:18Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "MDExOlB1bGxSZXF1ZXN0NTg2NDE4NTE5",
+      "title": "Some quick updates",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/pull/1",
+      "state": "MERGED",
+      "author": "shuque",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2021-03-08T03:50:29Z",
+      "updatedAt": "2021-03-08T04:14:30Z",
+      "baseRepository": "ShivanKaul/draft-sahib-domain-verification-techniques",
+      "baseRefName": "main",
+      "baseRefOid": "8de778806b56914631cac1cf9a7bb0dc816a91eb",
+      "headRepository": "shuque/draft-sahib-domain-verification-techniques",
+      "headRefName": "main",
+      "headRefOid": "7ea4a4a1367a3f4cb9669226e757bd7348f077b1",
+      "closedAt": "2021-03-08T04:14:30Z",
+      "mergedAt": "2021-03-08T04:14:30Z",
+      "mergedBy": "ShivanKaul",
+      "mergeCommit": {
+        "oid": "02978e7c6e4e0b88931a1d85080a61fefc748345"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NjA1OTUzMzE0",
+          "commit": {
+            "abbreviatedOid": "7ea4a4a"
+          },
+          "author": "ShivanKaul",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "This looks great @shuque!",
+          "createdAt": "2021-03-08T04:14:24Z",
+          "updatedAt": "2021-03-08T04:14:24Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "id": "MDExOlB1bGxSZXF1ZXN0NTg4NjI4OTU4",
+      "title": "Add one comment regarding atomic nature of the TXT method.",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/pull/2",
+      "state": "MERGED",
+      "author": "shuque",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "...\r\n",
+      "createdAt": "2021-03-09T21:14:30Z",
+      "updatedAt": "2021-03-10T17:22:27Z",
+      "baseRepository": "ShivanKaul/draft-sahib-domain-verification-techniques",
+      "baseRefName": "main",
+      "baseRefOid": "02978e7c6e4e0b88931a1d85080a61fefc748345",
+      "headRepository": "shuque/draft-sahib-domain-verification-techniques",
+      "headRefName": "main",
+      "headRefOid": "e232a1e567464062e27652dd0fcfaa4de1554e14",
+      "closedAt": "2021-03-10T17:22:27Z",
+      "mergedAt": "2021-03-10T17:22:27Z",
+      "mergedBy": "ShivanKaul",
+      "mergeCommit": {
+        "oid": "571d8fb5d386cce841283f849f94799d92390c68"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "MDExOlB1bGxSZXF1ZXN0NTkwODQwNzYw",
+      "title": "Described reserved subdomain method for TXT.",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/pull/3",
+      "state": "MERGED",
+      "author": "shuque",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "...\r\n",
+      "createdAt": "2021-03-11T12:54:19Z",
+      "updatedAt": "2021-03-11T12:55:22Z",
+      "baseRepository": "ShivanKaul/draft-sahib-domain-verification-techniques",
+      "baseRefName": "main",
+      "baseRefOid": "42975cc7805ba5c7499e42a4a41edf83a585396c",
+      "headRepository": "shuque/draft-sahib-domain-verification-techniques",
+      "headRefName": "main",
+      "headRefOid": "85f3f20870541bc2f89db30a11b0d869dbb8ed34",
+      "closedAt": "2021-03-11T12:55:22Z",
+      "mergedAt": "2021-03-11T12:55:22Z",
+      "mergedBy": "shuque",
+      "mergeCommit": {
+        "oid": "f50c7457a0515629f079081c2797bf474c42d6a3"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
