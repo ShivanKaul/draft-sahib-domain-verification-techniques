@@ -3,9 +3,10 @@
 
 
 Network Working Group                                           S. Sahib
-Internet-Draft                                                  S. Huque
-Intended status: Informational                                Salesforce
-Expires: 12 November 2021                                    11 May 2021
+Internet-Draft                                            Brave Software
+Intended status: Informational                                  S. Huque
+Expires: 12 November 2021                                     Salesforce
+                                                             11 May 2021
 
 
            Survey of Domain Verification Techniques using DNS
@@ -370,7 +371,7 @@ Acknowledgments
 Authors' Addresses
 
    Shivan Sahib
-   Salesforce
+   Brave Software
 
    Email: shivankaulsahib@gmail.com
 
