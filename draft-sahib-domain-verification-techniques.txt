@@ -5,7 +5,7 @@
 Network Working Group                                           S. Sahib
 Internet-Draft                                                  S. Huque
 Intended status: Informational                                Salesforce
-Expires: 10 October 2021                                    8 April 2021
+Expires: 12 November 2021                                    11 May 2021
 
 
            Survey of Domain Verification Techniques using DNS
@@ -41,7 +41,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 10 October 2021.
+   This Internet-Draft will expire on 12 November 2021.
 
 Copyright Notice
 
@@ -72,7 +72,7 @@ Table of Contents
    4.  Recommendations
      4.1.  Targeted Domain Verification
      4.2.  TXT vs CNAME
-     4.3.  Continuous checking
+     4.3.  Time-bound checking
    5.  Security Considerations
    6.  IANA Considerations
    7.  References
@@ -272,16 +272,18 @@ Table of Contents
 
    TODO
 
-4.3.  Continuous checking
+4.3.  Time-bound checking
 
    After domain verification is done, there is no need for the TXT or
-   CNAME record to continue to exist as the existence of the domain
+   CNAME record to continue to exist as the presence of the domain-
    verifying DNS record for a service only implies that a user with
    access to the service also has DNS control of the domain at the time
    the code was generated.  It should be safe to remove the verifying
-   DNS record once the verification is done.  However, despite this,
-   some services ask the record to exist in perpetuity
-   [ATLASSIAN-VERIFY].
+   DNS record once the verification is done and the service provider
+   doing the verification should specify how long the verification will
+   take (i.e. after how much time can the verifying DNS record be
+   deleted).  However, despite this, some services ask the record to
+   exist in perpetuity [ATLASSIAN-VERIFY].
 
 5.  Security Considerations
 
