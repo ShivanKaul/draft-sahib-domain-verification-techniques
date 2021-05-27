@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-05-13T00:26:07.763684+00:00",
+  "timestamp": "2021-05-27T00:35:42.192021+00:00",
   "repo": "ShivanKaul/draft-sahib-domain-verification-techniques",
   "labels": [
     {
@@ -32,6 +32,11 @@
       "name": "draft-01",
       "description": "Work on for draft 01",
       "color": "1128AF"
+    },
+    {
+      "name": "draft-02",
+      "description": "",
+      "color": "0e8a16"
     }
   ],
   "issues": [
@@ -195,11 +200,12 @@
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [
-        "enhancement"
+        "draft-02",
+        "future work"
       ],
       "body": "Guidance\r\n- domain verification can be spoofed if not using DNSSEC\r\n\r\nMove from Security Considerations section -> recommendations",
       "createdAt": "2021-04-07T20:13:41Z",
-      "updatedAt": "2021-04-07T20:14:08Z",
+      "updatedAt": "2021-05-26T21:32:39Z",
       "closedAt": null,
       "comments": []
     },
