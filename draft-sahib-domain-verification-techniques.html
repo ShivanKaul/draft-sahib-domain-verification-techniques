@@ -8,14 +8,14 @@
 <meta content="Shivan Sahib" name="author">
 <meta content="Shumon Huque" name="author">
 <meta content="
-       Verification of ownership of domains in the Domain Name System (DNS)     often relies on adding or editing DNS records within the domain. This document surveys various techniques in wide use today, the pros and cons of each, and possible improvements. 
+       Many services on the Internet need to verify ownership or control of domains in the Domain Name System (DNS)    . This verification often relies on adding or editing DNS records within the domain. This document surveys various techniques in wide use today, the pros and cons of each, and possible improvements. 
     " name="description">
 <meta content="xml2rfc 3.7.0" name="generator">
 <meta content="Internet-Draft" name="keyword">
 <meta content="draft-sahib-domain-verification-techniques-latest" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.7.0
-    Python 3.8.8
+    Python 3.8.10
     appdirs 1.4.4
     ConfigArgParse 1.2.3
     google-i18n-address 2.4.0
@@ -844,11 +844,11 @@ address div.right {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">Domain Verification Techniques</td>
-<td class="right">May 2021</td>
+<td class="right">June 2021</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Sahib &amp; Huque</td>
-<td class="center">Expires 12 November 2021</td>
+<td class="center">Expires 4 December 2021</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -861,12 +861,12 @@ address div.right {
 <dd class="internet-draft">draft-sahib-domain-verification-techniques-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2021-05-11" class="published">11 May 2021</time>
+<time datetime="2021-06-02" class="published">2 June 2021</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2021-11-12">12 November 2021</time></dd>
+<dd class="expires"><time datetime="2021-12-04">4 December 2021</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -883,7 +883,7 @@ address div.right {
 <h1 id="title">Survey of Domain Verification Techniques using DNS</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">Verification of ownership of domains in the Domain Name System (DNS) <span>[<a href="#RFC1034" class="xref">RFC1034</a>]</span> <span>[<a href="#RFC1035" class="xref">RFC1035</a>]</span> often relies on adding or editing DNS records within the domain. This document surveys various techniques in wide use today, the pros and cons of each, and possible improvements.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">Many services on the Internet need to verify ownership or control of domains in the Domain Name System (DNS) <span>[<a href="#RFC1034" class="xref">RFC1034</a>]</span> <span>[<a href="#RFC1035" class="xref">RFC1035</a>]</span>. This verification often relies on adding or editing DNS records within the domain. This document surveys various techniques in wide use today, the pros and cons of each, and possible improvements.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-discussion-venues">
@@ -912,7 +912,7 @@ address div.right {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 12 November 2021.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 4 December 2021.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -949,30 +949,30 @@ address div.right {
 </li>
           <li class="ulEmpty toc compact" id="section-toc.1-1.3">
             <p id="section-toc.1-1.3.1"><a href="#section-3" class="xref">3</a>.  <a href="#name-verification-techniques" class="xref">Verification Techniques</a></p>
-<ul class="compact toc ulEmpty">
-<li class="compact toc ulEmpty" id="section-toc.1-1.3.2.1">
+<ul class="ulEmpty toc compact">
+<li class="ulEmpty toc compact" id="section-toc.1-1.3.2.1">
                 <p id="section-toc.1-1.3.2.1.1"><a href="#section-3.1" class="xref">3.1</a>.  <a href="#name-txt-based" class="xref">TXT based</a></p>
-<ul class="compact toc ulEmpty">
-<li class="compact toc ulEmpty" id="section-toc.1-1.3.2.1.2.1">
+<ul class="ulEmpty toc compact">
+<li class="ulEmpty toc compact" id="section-toc.1-1.3.2.1.2.1">
                     <p id="section-toc.1-1.3.2.1.2.1.1" class="keepWithNext"><a href="#section-3.1.1" class="xref">3.1.1</a>.  <a href="#name-examples" class="xref">Examples</a></p>
 </li>
                 </ul>
 </li>
-              <li class="compact toc ulEmpty" id="section-toc.1-1.3.2.2">
+              <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.2">
                 <p id="section-toc.1-1.3.2.2.1"><a href="#section-3.2" class="xref">3.2</a>.  <a href="#name-cname-based" class="xref">CNAME based</a></p>
-<ul class="compact toc ulEmpty">
-<li class="compact toc ulEmpty" id="section-toc.1-1.3.2.2.2.1">
+<ul class="ulEmpty toc compact">
+<li class="ulEmpty toc compact" id="section-toc.1-1.3.2.2.2.1">
                     <p id="section-toc.1-1.3.2.2.2.1.1"><a href="#section-3.2.1" class="xref">3.2.1</a>.  <a href="#name-examples-2" class="xref">Examples</a></p>
 </li>
                 </ul>
 </li>
-              <li class="compact toc ulEmpty" id="section-toc.1-1.3.2.3">
+              <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.3">
                 <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="xref">3.3</a>.  <a href="#name-common-patterns" class="xref">Common Patterns</a></p>
-<ul class="compact toc ulEmpty">
-<li class="compact toc ulEmpty" id="section-toc.1-1.3.2.3.2.1">
+<ul class="ulEmpty toc compact">
+<li class="ulEmpty toc compact" id="section-toc.1-1.3.2.3.2.1">
                     <p id="section-toc.1-1.3.2.3.2.1.1"><a href="#section-3.3.1" class="xref">3.3.1</a>.  <a href="#name-name" class="xref">Name</a></p>
 </li>
-                  <li class="compact toc ulEmpty" id="section-toc.1-1.3.2.3.2.2">
+                  <li class="ulEmpty toc compact" id="section-toc.1-1.3.2.3.2.2">
                     <p id="section-toc.1-1.3.2.3.2.2.1"><a href="#section-3.3.2" class="xref">3.3.2</a>.  <a href="#name-rdata" class="xref">RDATA</a></p>
 </li>
                 </ul>
@@ -981,14 +981,14 @@ address div.right {
 </li>
           <li class="ulEmpty toc compact" id="section-toc.1-1.4">
             <p id="section-toc.1-1.4.1"><a href="#section-4" class="xref">4</a>.  <a href="#name-recommendations" class="xref">Recommendations</a></p>
-<ul class="compact toc ulEmpty">
-<li class="compact toc ulEmpty" id="section-toc.1-1.4.2.1">
+<ul class="ulEmpty toc compact">
+<li class="ulEmpty toc compact" id="section-toc.1-1.4.2.1">
                 <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="xref">4.1</a>.  <a href="#name-targeted-domain-verificatio" class="xref">Targeted Domain Verification</a></p>
 </li>
-              <li class="compact toc ulEmpty" id="section-toc.1-1.4.2.2">
+              <li class="ulEmpty toc compact" id="section-toc.1-1.4.2.2">
                 <p id="section-toc.1-1.4.2.2.1"><a href="#section-4.2" class="xref">4.2</a>.  <a href="#name-txt-vs-cname" class="xref">TXT vs CNAME</a></p>
 </li>
-              <li class="compact toc ulEmpty" id="section-toc.1-1.4.2.3">
+              <li class="ulEmpty toc compact" id="section-toc.1-1.4.2.3">
                 <p id="section-toc.1-1.4.2.3.1"><a href="#section-4.3" class="xref">4.3</a>.  <a href="#name-time-bound-checking" class="xref">Time-bound checking</a></p>
 </li>
             </ul>
@@ -1001,11 +1001,11 @@ address div.right {
 </li>
           <li class="ulEmpty toc compact" id="section-toc.1-1.7">
             <p id="section-toc.1-1.7.1"><a href="#section-7" class="xref">7</a>.  <a href="#name-references" class="xref">References</a></p>
-<ul class="compact toc ulEmpty">
-<li class="compact toc ulEmpty" id="section-toc.1-1.7.2.1">
+<ul class="ulEmpty toc compact">
+<li class="ulEmpty toc compact" id="section-toc.1-1.7.2.1">
                 <p id="section-toc.1-1.7.2.1.1"><a href="#section-7.1" class="xref">7.1</a>.  <a href="#name-normative-references" class="xref">Normative References</a></p>
 </li>
-              <li class="compact toc ulEmpty" id="section-toc.1-1.7.2.2">
+              <li class="ulEmpty toc compact" id="section-toc.1-1.7.2.2">
                 <p id="section-toc.1-1.7.2.2.1"><a href="#section-7.2" class="xref">7.2</a>.  <a href="#name-informative-references" class="xref">Informative References</a></p>
 </li>
             </ul>
@@ -1026,7 +1026,7 @@ address div.right {
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
 <p id="section-1-1">Many providers on the internet need users to prove that they control a particular domain before granting them some sort of privilege associated with that domain. For instance, certificate authorities like Let's Encrypt <span>[<a href="#LETSENCRYPT" class="xref">LETSENCRYPT</a>]</span> ask requesters of TLS certificates to prove that they operate the domain they're requesting the certificate for. Providers generally allow for several different ways of proving domain control, some of which include manipulating DNS records. This document focuses on DNS techniques for domain verification; other techniques (such as email or HTML verification) are out-of-scope.<a href="#section-1-1" class="pilcrow">¶</a></p>
-<p id="section-1-2">In practice, DNS-based verification often looks like the provider generating a random value and asking the requester to create a DNS record containing this random value and placing it at a location that the provider can query for. Generally only one temporary DNS record is sufficient for proving domain ownership.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-2">In practice, DNS-based verification often takes the form of the provider generating a random value visible only to the requester, and then asking the requester to create a DNS record containing this random value and placing it at a location that the provider can query for. Generally only one temporary DNS record is sufficient for proving domain ownership.<a href="#section-1-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="conventions-and-definitions">
@@ -1054,11 +1054,11 @@ when, and only when, they appear in all capitals, as shown here.<a href="#sectio
 <p id="section-3.1-1">TXT record-based DNS domain verification is usually the default option for DNS verification. The service provider asks the user to add a DNS TXT record (perhaps through their domain host or DNS provider) at the domain with a certain value. Then, the service provider does a DNS TXT query for the domain being verified and checks that the value exists. For example, this is what a DNS TXT verification record could look like:<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <div class="artwork art-text alignLeft" id="section-3.1-2">
 <pre>
-   example.com.   IN   TXT   "foo-verification=bar"
+   example.com.   IN   TXT   "foo-verification=bar-237943648324687364"
 </pre><a href="#section-3.1-2" class="pilcrow">¶</a>
 </div>
-<p id="section-3.1-3">Here, the value "bar" for the attribute "foo-verification" serves as the randomly-generated TXT value being added to prove ownership of the domain to Foo provider. Although the original DNS protocol specifications did not associate any semantics with the DNS TXT record, <span>[<a href="#RFC1464" class="xref">RFC1464</a>]</span> describes how to use them to store attributes in the form of ASCII text key-value pairs for a particular domain. In practice, there is wide variation in the content of DNS TXT records used for domain verification, and they often do not follow the key-value pair model. Even so, the rdata portion of the DNS TXT record has to contain the value being used to verify the domain. The value is usually a randomly-generated token in order to guarantee that the entity who requested that the domain be verified (i.e. the person managing the account at Foo provider) is the one who has (direct or delegated) access to DNS records for the domain. The generated token typically expires in a few days. The TXT record is usually placed at the domain being verified ("example.com" in the example above). After a TXT record has been added, the service provider will usually take some time to verify that the DNS TXT record with the expected token exists for the domain.<a href="#section-3.1-3" class="pilcrow">¶</a></p>
-<p id="section-3.1-4">The same domain name can have multiple distinct TXT records (a TXT Record Set).<a href="#section-3.1-4" class="pilcrow">¶</a></p>
+<p id="section-3.1-3">Here, the value "bar-bar-237943648324687364" for the attribute "foo-verification" serves as the randomly-generated TXT value being added to prove ownership of the domain to Foo provider. Although the original DNS protocol specifications did not associate any semantics with the DNS TXT record, <span>[<a href="#RFC1464" class="xref">RFC1464</a>]</span> describes how to use them to store attributes in the form of ASCII text key-value pairs for a particular domain. In practice, there is wide variation in the content of DNS TXT records used for domain verification, and they often do not follow the key-value pair model. Even so, the rdata portion of the DNS TXT record has to contain the value being used to verify the domain. The value is usually a randomly-generated token in order to guarantee that the entity who requested that the domain be verified (i.e. the person managing the account at Foo provider) is the one who has (direct or delegated) access to DNS records for the domain. The generated token typically expires in a few days. The TXT record is usually placed at the domain being verified ("example.com" in the example above). After a TXT record has been added, the service provider will usually take some time to verify that the DNS TXT record with the expected token exists for the domain.<a href="#section-3.1-3" class="pilcrow">¶</a></p>
+<p id="section-3.1-4">The same domain name can have multiple distinct TXT records (a TXT Record Set), where each TXT record may be associated with a distinct service.<a href="#section-3.1-4" class="pilcrow">¶</a></p>
 <div id="examples">
 <section id="section-3.1.1">
           <h4 id="name-examples">
@@ -1168,8 +1168,8 @@ when, and only when, they appear in all capitals, as shown here.<a href="#sectio
 <a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-targeted-domain-verificatio" class="section-name selfRef">Targeted Domain Verification</a>
         </h3>
 <p id="section-4.1-1">The TXT record being used for domain verification is most commonly placed at the domain name being verified. For example, if <code>example.com</code> is being verified, then the DNS TXT record will have <code>example.com</code> in the Name section.<a href="#section-4.1-1" class="pilcrow">¶</a></p>
-<p id="section-4.1-2">If many services are attempting to verify the domain name, many distinct TXT records end up being placed at that name. There is no way to surgically query only the TXT record for a specific service, resulting in extra work for a verifying service to sift through the records for its own domain verification record. In addition, since DNS Resource Record sets are treated atomically, all TXT records must be returned to the querier, which leads to a bloating of DNS responses. This could cause truncation and expensive retrying over TCP.<a href="#section-4.1-2" class="pilcrow">¶</a></p>
-<p id="section-4.1-3">A better method is to place the TXT record at a subdomain of the domain being verified that is specially reserved for use by the application service in question.<a href="#section-4.1-3" class="pilcrow">¶</a></p>
+<p id="section-4.1-2">If many services are attempting to verify the domain name, many distinct TXT records end up being placed at that name. There is no way to surgically query only the TXT record for a specific service, resulting in extra work for a verifying service to sift through the records for its own domain verification record. In addition, since DNS Resource Record sets are treated atomically, all TXT records must be returned to the querier, which leads to a bloating of DNS responses. This could cause truncation and retrying DNS queries over TCP, which is more resource intensive.<a href="#section-4.1-2" class="pilcrow">¶</a></p>
+<p id="section-4.1-3">A better method is to place the TXT record at a subdomain of the domain being verified that is specially reserved for use by the application service in question. The LetsEncrypt ACME challenge mentioned earlier uses this method.<a href="#section-4.1-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="txt-vs-cname">
