@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-05-27T00:35:42.192021+00:00",
+  "timestamp": "2021-06-13T00:22:36.666319+00:00",
   "repo": "ShivanKaul/draft-sahib-domain-verification-techniques",
   "labels": [
     {
@@ -37,6 +37,11 @@
       "name": "draft-02",
       "description": "",
       "color": "0e8a16"
+    },
+    {
+      "name": "admin",
+      "description": "",
+      "color": "fef2c0"
     }
   ],
   "issues": [
@@ -294,6 +299,24 @@
       "body": "Scope of verification:\r\nLet's Encrypt - is only for the domain\r\nGoogle - everything under that domain?\r\n\r\nCall this out explicitly in the draft.",
       "createdAt": "2021-04-15T21:23:18Z",
       "updatedAt": "2021-04-15T21:23:18Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 17,
+      "id": "MDU6SXNzdWU5MTg4OTExNjM=",
+      "title": "Ask ART for review",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/17",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "admin"
+      ],
+      "body": "",
+      "createdAt": "2021-06-11T15:27:42Z",
+      "updatedAt": "2021-06-11T15:27:42Z",
       "closedAt": null,
       "comments": []
     }
