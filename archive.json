@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-06-13T00:22:36.666319+00:00",
+  "timestamp": "2021-06-17T00:19:37.464902+00:00",
   "repo": "ShivanKaul/draft-sahib-domain-verification-techniques",
   "labels": [
     {
@@ -42,6 +42,11 @@
       "name": "admin",
       "description": "",
       "color": "fef2c0"
+    },
+    {
+      "name": "feedback",
+      "description": "",
+      "color": "A8E94A"
     }
   ],
   "issues": [
@@ -317,6 +322,50 @@
       "body": "",
       "createdAt": "2021-06-11T15:27:42Z",
       "updatedAt": "2021-06-11T15:27:42Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 18,
+      "id": "MDU6SXNzdWU5MjE1ODE2ODQ=",
+      "title": "Multi-vantage-point checking for domain verification records",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/18",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "feedback"
+      ],
+      "body": "Stephane Bortzmeyer:\r\n\r\n>Section 5: should we also add that, specially if the zone is not\r\nsigned, multi-vantage-point checking is recommended (Let's Encrypt\r\nalready does it)?",
+      "createdAt": "2021-06-15T16:24:07Z",
+      "updatedAt": "2021-06-15T16:26:33Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "ShivanKaul",
+          "authorAssociation": "OWNER",
+          "body": "LE announcement: https://community.letsencrypt.org/t/validating-challenges-from-multiple-network-vantage-points/40955\r\nPaper: https://www.cs.princeton.edu/~jrex/papers/multiva20.pdf",
+          "createdAt": "2021-06-15T16:26:33Z",
+          "updatedAt": "2021-06-15T16:26:33Z"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "id": "MDU6SXNzdWU5MjE1ODU2MDA=",
+      "title": "Domain re-validation requirements should be clearly mentioned",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/19",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [
+        "feedback"
+      ],
+      "body": "Tony Finch:\r\n>Best practice for providers ought to be to document re-validation\r\nrequirements very prominently and clearly. (In my experience the common\r\nones are not too bad but occasionally we have to guess, so maybe a service\r\nstops working for mysterious reasons 30 or 90 days later.)",
+      "createdAt": "2021-06-15T16:28:20Z",
+      "updatedAt": "2021-06-15T16:28:20Z",
       "closedAt": null,
       "comments": []
     }
