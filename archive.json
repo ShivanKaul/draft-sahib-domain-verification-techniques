@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-06-17T00:19:37.464902+00:00",
+  "timestamp": "2021-07-25T00:20:50.860592+00:00",
   "repo": "ShivanKaul/draft-sahib-domain-verification-techniques",
   "labels": [
     {
@@ -366,6 +366,22 @@
       "body": "Tony Finch:\r\n>Best practice for providers ought to be to document re-validation\r\nrequirements very prominently and clearly. (In my experience the common\r\nones are not too bad but occasionally we have to guess, so maybe a service\r\nstops working for mysterious reasons 30 or 90 days later.)",
       "createdAt": "2021-06-15T16:28:20Z",
       "updatedAt": "2021-06-15T16:28:20Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 20,
+      "id": "MDU6SXNzdWU5NTIxMzA0NjU=",
+      "title": "More examples needed for CNAME section",
+      "url": "https://github.com/ShivanKaul/draft-sahib-domain-verification-techniques/issues/20",
+      "state": "OPEN",
+      "author": "ShivanKaul",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Plus a description of what the method is doing. ",
+      "createdAt": "2021-07-24T18:59:36Z",
+      "updatedAt": "2021-07-24T18:59:56Z",
       "closedAt": null,
       "comments": []
     }
